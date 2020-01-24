@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:id="@+id/container"
+    tools:context=".activities.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is your name?"
+        android:textStyle="bold"
+        android:layout_marginBottom="60dp"
+        android:textSize="30dp"
+        android:textColor="@color/colorGrey"
+        android:layout_above="@+id/name_edit_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"/>
+
+    <EditText
+        android:id="@+id/name_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Please enter your name"
+        android:gravity="center"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerInParent="true"/>
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:stateListAnimator="@null"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"
+        android:layout_below="@+id/name_edit_text"/>
+
+    <Button
+        android:id="@+id/history_btn"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="History"
+        android:stateListAnimator="@null"
+        android:layout_marginHorizontal="50dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="23dp"
+        android:layout_below="@+id/next_btn"/>
+
+</RelativeLayout>
